@@ -1,0 +1,22 @@
+{
+  "name": "kreemer/satis",
+  "description": "Composer Satis repository.",
+  "type": "project",
+  "homepage": "https://github.com/kreemer/satis",
+  "require": {
+    "composer/satis": "dev-master"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kevin Studer",
+      "email": "kevin.studer@ub.unibe.ch"
+    }
+  ],
+  "minimum-stability": "dev",
+  "scripts": {
+    "install-deps": "@composer install",
+    "build": "satis build satis.json public --no-interaction",
+    "deploy": "sh deploy.sh"
+  }
+}

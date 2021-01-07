@@ -1,0 +1,11 @@
+{
+  "name": "Personal Packagist",
+  "homepage": "https://kreemer.github.io/satis",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:kreemer/package.git"
+    }
+  ],
+  "require-all": true
+}
