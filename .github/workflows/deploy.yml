@@ -24,6 +24,20 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+
+      # Runs a single command using the runners shell
+      - name: Run composer
+        uses: php-actions/composer@v5
+        with: 
+          command: run-script install-deps
+
+      # Runs a single command using the runners shell
+      - name: Run composer
+        uses: php-actions/composer@v5
+        with: 
+          command: run-script build
+          
+          
       # Runs a single command using the runners shell
       - name: Run composer
         uses: php-actions/composer@v5
